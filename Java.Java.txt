@@ -1,0 +1,5 @@
+特别注意的是，重载方法的针对static变量（各个对象共享数据），final变量（最终变量），                                  
+重载同名方法和构造器后，
+都要对static和final进行同步修改，
+否则发生报错，类似的，同名方法中，要this全this要super全super
+static放在方法区，而final放在堆区，因此，static可以随着类来调用，而final可以用来修饰方法内的变量
